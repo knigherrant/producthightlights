@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>Product Highlights</name>
+        <author>Bold New Media</author>
+        <creationDate>March 13, 2017</creationDate>
+        <copyright>(C) 2008 - 2015 Bold New Media. All rights reserved.</copyright>
+        <authorEmail>support@boldnewmedia.com.au</authorEmail>
+        <authorUrl>http://www.boldnewmedia.com.au</authorUrl>
+        <version>1.0</version>
+	<description>Display Product Highlights</description>
+	<files>
+		<filename module="mod_bnmproducthightlights">mod_bnmproducthightlights.php</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+		<folder>helpers</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_bnmproducthightlights.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset addfieldpath="/modules/mod_bnmproducthightlights/fields"   name="basic">
+                           
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+          
+    </config>   
+</extension>
