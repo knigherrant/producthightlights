@@ -40,8 +40,22 @@ class BNMProductHightLightsControllerConfigs extends JControllerAdmin
     public function save(){
         $model = $this->getModel();
         $post = JRequest::get('post');
+        if($_FILES['jtemplate']['name']){
+            jimport('joomla.filesystem.folder');
+            jimport('joomla.filesystem.file');
+            $name = time() . '_' . $_FILES['jtemplate']['name'];
+            if(move_uploaded_file($_FILES['jtemplate']['tmp_name'], JPATH_SITE . BNMProduct::$pathTemplate. $name)){
+                if(!BNMProduct::extractArchive($name)){
+                    $this->setRedirect('index.php?option=com_bnmproducthightlights&view=configs', 'Upload Template error!','error');
+                    return;
+                }
+            }else{
+                 $this->setRedirect('index.php?option=com_bnmproducthightlights&view=configs', 'Upload Template error!','error');
+                 return;
+            }
+        }
         $model->save($post);
         if($this->getTask() == 'apply') $this->setRedirect('index.php?option=com_bnmproducthightlights&view=configs', 'Saved!');
-        else $this->setRedirect('index.php?option=com_bnmproducthightlights&view=documents', 'Saved!');
+        else $this->setRedirect('index.php?option=com_bnmproducthightlights&view=products', 'Saved!');
     }
 }

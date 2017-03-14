@@ -108,9 +108,15 @@ $listDirn	= $this->state->get('list.direction');
                         <?php endif; ?>
                     </td>
                     
-                    <td data-field="<?php echo JText::_('URL');?>">
+                    <td data-field="Image">
                         
-                        <a target="_blank" href="<?php echo $item->product; ?>" ><?php echo $item->product; ?></a>
+                       <?php echo $item->image; ?>
+                        
+                    </td>
+                    
+                    <td data-field="Image">
+                        
+                       <?php echo $item->created; ?>
                         
                     </td>
                    

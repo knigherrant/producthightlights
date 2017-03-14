@@ -33,7 +33,7 @@ JHtml::_('behavior.keepalive');
 <div class="metikappmgr">
     <form action="<?php echo JRoute::_('index.php?option=com_bnmproducthightlights&layout=edit&id=' . (int) $this->item->id); ?>" method="post" enctype="multipart/form-data" name="adminForm" id="product-form" class="form-validate">
         <div class="form-horizontal row-fluid">
-            <div class="clearfix fltlft">
+            <div class="clearfix fltlft span4">
                 <legend><?php echo JText::_('COM_BNMPRODUCTHIGHTLIGHTS_EDIT_TITLE');?></legend>
                 <div class="control-group">
                     <div class="control-label"><?php echo $this->form->getLabel('title'); ?></div>
@@ -47,8 +47,8 @@ JHtml::_('behavior.keepalive');
                 <br/>
                 <br/>
                 <div class="control-group">
-                    <div class="control-label"><?php echo $this->form->getLabel('product'); ?></div>
-                    <div class="controls"><?php echo $this->form->getInput('product'); ?></div>
+                    <div class="control-label"><?php echo $this->form->getLabel('created'); ?></div>
+                    <div class="controls"><?php echo $this->form->getInput('created'); ?></div>
                 </div>
                 <br/>
                 <div class="control-group">
@@ -56,7 +56,9 @@ JHtml::_('behavior.keepalive');
                     <div class="controls"><?php echo $this->form->getInput('state'); ?></div>
                 </div>
             </div>
-          
+            <div class="span8" >
+                <legend><?php echo JText::_('COM_BNMPRODUCTHIGHTLIGHTS_IMAGE_POSTION');?></legend>
+            </div>
             <?php echo $this->form->getInput('id'); ?>
             <input type="hidden" name="task" value="" />
             <?php echo JHtml::_('form.token'); ?>

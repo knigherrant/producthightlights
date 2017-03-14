@@ -8,8 +8,6 @@
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
-defined('DS') or define('DS', DIRECTORY_SEPARATOR);
-require_once dirname(__FILE__).'/helpers/helper.php';  
-require_once JPATH_SITE .'/components/com_bnmproducthightlights/helper/bnmproducthightlights.php';  
+require_once JPATH_SITE .'/administrator/components/com_bnmproducthightlights/helpers/producthelper.php';  
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 require JModuleHelper::getLayoutPath('mod_bnmproducthightlights', $params->get('layout'));

@@ -106,10 +106,6 @@ class BNMProductHightLightsModelConfigs extends JModelAdmin {
         $post = JRequest::get('post');
         $post['params'] = JFactory::getApplication()->input->get('params', '', 'raw');
         $post['params'] = json_encode($post['params']);
-        $post['emails_return_e'] = $_POST['emails_return_e'];
-        $post['emails_return_s'] = $_POST['emails_return_s'];
-        $post['emails_request_e'] = $_POST['emails_request_e'];
-        $post['emails_request_s'] = $_POST['emails_request_s'];
         $table = JTable::getInstance('config','BNMProductHightLightsTable');
         $table->load(1);
         $table->bind($post);

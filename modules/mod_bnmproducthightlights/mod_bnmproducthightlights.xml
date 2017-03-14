@@ -20,7 +20,10 @@
 	<config>
 		<fields name="params">
 			<fieldset addfieldpath="/modules/mod_bnmproducthightlights/fields"   name="basic">
-                           
+                           <field name="product"
+					type="sql" query="SELECT id, title FROM #__producthightlights" key_field="id" value_field="title"
+					label="Select Product"
+					description="Select Product" />
 			</fieldset>
 
 			<fieldset

@@ -2,7 +2,7 @@
 	<!-- $Id:jvcustomfield.xml 21330 2012-10-24 13:17:59Z sakis $ -->
 <form>
 <fieldset>
-	<field name="id" type="text" default="0"
+	<field name="id" type="hidden" default="0"
 			readonly="true" class="readonly"
 			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
 
@@ -14,36 +14,27 @@
 			<option value="0">JUNPUBLISHED</option>			
 		</field>
 		
-		<field name="smart_search" type="list"	label="COM_BNMPRODUCTHIGHTLIGHTS_FIELD_SMART_SEARCH_LABEL" description="COM_BNMPRODUCTHIGHTLIGHTS_FIELD_SMART_SEARCH_DESC"
-			class="inputbox" size="1" default="1" >
-			<option value="1">JYES</option>
-			<option value="0">JNO</option>			
-		</field>
-		<field name="expanded" type="list"	label="COM_BNMPRODUCTHIGHTLIGHTS_FIELD_EXPANDED_LABEL" description="COM_BNMPRODUCTHIGHTLIGHTS_FIELD_EXPANDED_DESC"
-			class="inputbox" size="1" default="1" >
-			<option value="1">JYES</option>
-			<option value="0">JNO</option>			
-		</field>
 		
-		<field name="ordering" type="ordering" class="inputbox"
-			label="JFIELD_ORDERING_LABEL" description="JFIELD_ORDERING_DESC" />
-
 		
-		<field name="type" type="list"
-			label="COM_BANNERS_FIELD_TYPE_LABEL" description="COM_BANNERS_FIELD_TYPE_DESC"
-			default="0" class="inputbox">
-			<option value="1">COM_BNMPRODUCTHIGHTLIGHTS_SELECT</option>
-			<option value="2">COM_BNMPRODUCTHIGHTLIGHTS_RADIO	</option>
-			<option value="2">COM_BNMPRODUCTHIGHTLIGHTSCHECKBOX	</option>
-		</field>
+		<field name="title" type="text" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_TITLE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_TITLE_DESC" />
+                
+                <field name="image" type="media" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_IMAGE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_IMAGE_DESC" />
+                
+                <field name="position" type="textarea" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_POSITION" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_POSITION_DESC" />
+                
+                <field name="popupinfo" type="textarea" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_INFO" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_INFO_DESC" />
+                
+                <field name="created" type="calendar" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_DATE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_DATE_DESC" />
+                
+                <field name="params" type="textarea" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_PARAMS" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_PARAMS_DESC" />
 
-		<field name="custombannercode" type="textarea" class="inputbox"
-			rows="3" cols="30" filter="raw"
-			label="COM_BANNERS_FIELD_CUSTOMCODE_LABEL" description="COM_BANNERS_FIELD_CUSTOMCODE_DESC" />
-
-		<field name="clickurl" type="url" class="inputbox"
-				label="COM_BANNERS_FIELD_CLICKURL_LABEL" description="COM_BANNERS_FIELD_CLICKURL_DESC" />
-
+	
 	</fieldset>
 
 </form>
