@@ -1,0 +1,11 @@
+
+#imageView>img{cursor:crosshair; width: 100%;  height: auto;}
+#imageView{position: relative;}
+#imageView .node-rect,#imageView .node-item{border: dashed 1px; position: absolute;}
+#imageView .node-item{cursor: pointer;}
+#imageView .node-tools{position: absolute; bottom: 100%; left: 0; margin:0px 0px 3px -3px; display: none;}
+#imageView .node-item.selected .node-tools{display: block;}
+#imageView .ui-resizable-se{right: -3px; bottom: -3px;}
+#imageView .btn-group > .btn-group,#imageView .btn-group > .btn-group + *{ margin-left: -1px;}
+#imageView .btn-group > .btn-group > .btn{ border-radius: 0; padding-bottom: 3px; }
+#imageView .btn-group > select{ width: auto;}

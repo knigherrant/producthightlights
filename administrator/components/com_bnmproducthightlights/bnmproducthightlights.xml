@@ -1,50 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="2.5" method="upgrade">
-    <name>COM_BNMPRODUCTHIGHTLIGHTS</name>
-    <creationDate>July 2015</creationDate>
-    <copyright>Copyright (C) 2015. All rights reserved.</copyright>
-    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-    <author>joomlavi</author>
-    <authorEmail>info@joomlavi.com</authorEmail>
-    <authorUrl>http://www.joomlavi.com</authorUrl>
-    <version>1.0.0</version>
-    <description></description>
-    
-	<scriptfile>install.php</scriptfile>
-	<install>
-		<sql>
-			<file driver="mysql" charset="utf8">sql/install.sql</file>
-		</sql>
-	</install>
-    	<uninstall> <!-- Runs on uninstall -->
-		<sql>
-			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
-		</sql>
-	</uninstall>
-	
-	
-    <files folder="site">
-        <filename>index.html</filename>
-    </files>
-    
-    <administration>
-		<menu>COM_BNMPRODUCTHIGHTLIGHTS</menu>
-		<files folder="admin">
-			<filename>index.html</filename>
-			<filename>bnmproducthightlights.php</filename>
-			<filename>controller.php</filename>
-			<filename>access.xml</filename>
-			<folder>views</folder>
-			<folder>helpers</folder>
-			<folder>models</folder>
-			<folder>assets</folder>
-			<folder>controllers</folder>
-			<folder>sql</folder>
-			<folder>tables</folder>
-		</files>	
-	<languages folder="admin/language">	
-		<language tag="en-GB">en-GB/en-GB.com_bnmproducthightlights.sys.ini</language>
-		<language tag="en-GB">en-GB/en-GB.com_bnmproducthightlights.ini</language>
-	</languages>
-	</administration>
-</extension>
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>COM_BNMPRODUCTHIGHTLIGHTS</name>
+    <creationDate>July 2015</creationDate>
+    <copyright>Copyright (C) 2015. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>joomlavi</author>
+    <authorEmail>info@joomlavi.com</authorEmail>
+    <authorUrl>http://www.joomlavi.com</authorUrl>
+    <version>1.0.0</version>
+    <description></description>
+    
+	<scriptfile>install.php</scriptfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+    	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	
+    <files folder="site">
+        <filename>index.html</filename>
+    </files>
+    
+    <administration>
+		<menu>COM_BNMPRODUCTHIGHTLIGHTS</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>bnmproducthightlights.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<folder>views</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+		</files>	
+	<languages folder="admin/language">	
+		<language tag="en-GB">en-GB/en-GB.com_bnmproducthightlights.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.com_bnmproducthightlights.ini</language>
+	</languages>
+	</administration>
+</extension>

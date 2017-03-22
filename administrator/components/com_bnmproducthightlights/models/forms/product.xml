@@ -1,40 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-	<!-- $Id:jvcustomfield.xml 21330 2012-10-24 13:17:59Z sakis $ -->
-<form>
-<fieldset>
-	<field name="id" type="hidden" default="0"
-			readonly="true" class="readonly"
-			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
-
-		
-		<field name="state" type="list"
-			label="JSTATUS" description="COM_BNMPRODUCTHIGHTLIGHTS_FIELD_STATE_DESC"
-			class="inputbox" size="1" default="1" >
-			<option value="1">JPUBLISHED</option>
-			<option value="0">JUNPUBLISHED</option>			
-		</field>
-		
-		
-		
-		<field name="title" type="text" class="inputbox"
-			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_TITLE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_TITLE_DESC" />
-                
-                <field name="image" type="media" class="inputbox"
-			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_IMAGE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_IMAGE_DESC" />
-                
-                <field name="position" type="textarea" class="inputbox"
-			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_POSITION" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_POSITION_DESC" />
-                
-                <field name="popupinfo" type="textarea" class="inputbox"
-			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_INFO" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_INFO_DESC" />
-                
-                <field name="created" type="calendar" class="inputbox"
-			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_DATE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_DATE_DESC" />
-                
-                <field name="params" type="textarea" class="inputbox"
-			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_PARAMS" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_PARAMS_DESC" />
-
-	
-	</fieldset>
-
-</form>
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id:jvcustomfield.xml 21330 2012-10-24 13:17:59Z sakis $ -->
+<form>
+<fieldset>
+	<field name="id" type="hidden" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		
+		<field name="state" type="list"
+			label="JSTATUS" description="COM_BNMPRODUCTHIGHTLIGHTS_FIELD_STATE_DESC"
+			class="inputbox" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>			
+		</field>
+		
+		
+		
+		<field name="title" type="text" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_TITLE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_TITLE_DESC" />
+                
+                <field name="image" type="media" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_IMAGE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_IMAGE_DESC" />
+                
+                <field name="position" type="textarea" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_POSITION" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_POSITION_DESC" />
+                
+                <field name="popupinfo" type="textarea" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_INFO" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_INFO_DESC" />
+                
+                <field name="created" type="calendar" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_DATE" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_DATE_DESC" />
+                
+                <field name="params" type="textarea" class="inputbox"
+			label="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_PARAMS" description="COM_BNMPRODUCTHIGHTLIGHTS_PRODUCT_PARAMS_DESC" />
+
+	
+	</fieldset>
+
+</form>
